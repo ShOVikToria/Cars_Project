@@ -4,6 +4,12 @@
     border-radius: 10px;
 }
 
+/* сусідній селектор */
+p + h2{
+    font-style: italic;
+    color:rgb(65, 43, 17);
+}
+
 .advantages {
     align-items: center;
     padding-left: 20px;
