@@ -1,0 +1,57 @@
+.car-picture {
+    width: 350px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.pictures{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;  
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+}
+
+.group p{
+    font-size: 24px;
+    text-align: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;     
+}
+
+.car-picture:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.main-menu li:last-child{
+    font-size: 40px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: left;
+    margin: 0 7% 0 7%;
+}

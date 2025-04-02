@@ -4,113 +4,61 @@
     <meta charset="UTF-8">
     <meta name="author" content="Шевчук Вікторія">
     <title>Кросовери</title>
-    <style>    
-    a{
-        text-decoration: none;
-        color: inherit;
-    }
-    
-    h2 {
-        font-size: 36px;    
-    }
-    
-    p{
-        font-size: 30px;
-        line-height: 1.5;
-        margin: 0;
-    }
-    
-    img{
-        width: 350px;
-        height: auto;
-        margin-bottom: 10px;
-        border-radius: 10px;
-    }
-
-    .main-menu li{
-        display: flex;
-        font-size: 36px;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .main-menu{
-        padding: 0;
-        display: flex;
-        align-content: center;
-        justify-content: space-around;
-        list-style-type: none;
-        margin: 0;
-        width: 100%;
-    }
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles_crossover.css">
+    <style>  
+        a{
+            color: inherit; 
+        }  
     </style>
 </head>
-
-<body bgcolor=#D1BCAA style="margin: 0">
-<font face="Arial" color="#1D1106"> 
-    <center>
-        <font face="Lucida Sans Unicode" color="#BBA28C">
-            <div style="background-color: rgb(29, 17, 6); height: 7vh;">
-                <ul class="main-menu">
-                    <li>
-                        <a href="index.html">&#8962; Головна</a>
-                    </li>
-                    <li>
-                        <a href="sedan.html">Седани</a>
-                    </li>
-                    <li>
-                        <a href="hatchback.html">Хетчбеки</a>
-                    </li>
-                    <li style="color: rgb(190, 184, 184); font-size: 40px">
-                        <font color=#BEB8B8>
-                            <a href="crossover.html">Кросовери</a>
-                        </font>
-                    </li>
-                </ul>
-            </div>
-        </font> 
-    </center> 
-
-    <div style="display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;">
-        <center><h2>Кросовер</h2>
-        <p id="кросовер" align="left">
-            <strong>Кросовер</strong> (англ. <font face="Times"><i><strong>crossover utility vehicle (CUV)</strong></i></font>) — універсал підвищеної прохідності.
+<body>
+    <div class="header">
+        <ul class="main-menu">
+            <li>
+                <a href="index.html">&#8962; Головна</a>
+            </li>
+            <li>
+                <a href="sedan.html">Седани</a>
+            </li>
+            <li>
+                <a href="hatchback.html">Хетчбеки</a>
+            </li>
+            <li>
+                <a href="crossover.html" id="light_text">Кросовери</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Кросовер</h2>
+        <p class="upper-text">
+            Кросовер (англ. crossover utility vehicle (CUV)) — універсал підвищеної прохідності,
+             що поєднує в собі риси позашляховика та легкового автомобіля.
         </p>
-        <h2>Походження</h2></center>
-        <div style="display: flex;
-                    flex-direction: row;">
-            <div style="padding: 15px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        margin-right: 20px;">
-                <div style="display: flex; flex-direction: column;">
+        <h2>Походження</h2>
+        <div class="info">
+            <div class="pictures">
+                <div class="group">
                     <a href="./pictures/1987_Lada_Niva_1600.jpg" target="_blank">
                         <img src="./pictures/1987_Lada_Niva_1600.jpg" alt="Hyundai Tucson" class="car-picture">
                     </a>
-                    <p align="center" style="font-size: 24px;"><strong><i>ВАЗ-2121 «Нива»</i></strong> 1997 року є першим позашляховиком з несучим кузовом</p>
+                    <p>ВАЗ-2121 «Нива» 1997 року є першим позашляховиком з несучим кузовом</p>
                 </div>
-                <div style="display: flex; flex-direction: column;">
+                <div class="group">
                     <a href="./pictures/1995_Toyota_RAV4_(SXA11R)_Cruiser_wagon_(2015-07-14)_01.jpg" target="_blank">
                         <img src="./pictures/1995_Toyota_RAV4_(SXA11R)_Cruiser_wagon_(2015-07-14)_01.jpg" alt="Hyundai Tucson" class="car-picture">
                     </a>
-                    <p align="center" style="font-size: 24px;"><strong><i>Toyota RAV4</i></strong> 1994 — перший кросовер в сучасному розумінні цього термінму</p>    
+                    <p>Toyota RAV4 1994 — перший кросовер в сучасному розумінні цього термінму</p>    
                 </div>
-                <div style="display: flex; flex-direction: column;">
+                <div class="group">
                     <a href="./pictures/1982_AMC_Eagle_4-door_wagon_two-tone_03.jpg" target="_blank">
                         <img src="./pictures/1982_AMC_Eagle_4-door_wagon_two-tone_03.jpg" alt="Hyundai Tucson" class="car-picture">
                     </a>
-                    <p align="center" style="font-size: 24px;";><strong><i>AMC Eagle</i></strong> 1979 — перший американський кросовер</p>
+                    <p>AMC Eagle 1979 — перший американський кросовер</p>
                 </div>                
             </div>
-            <div style="display: flex; flex-direction: column;  ">
-                <p align="justify">
+            <div class="text">
+                <p>
                     Термін, що походить із Північної Америки, спочатку використовувався для 
                     будь-якого транспортного засобу, який поєднує в собі характеристики двох 
                     різних типів транспортних засобів, тоді як з часом кросовер здебільшого 
@@ -122,7 +70,7 @@
                     платформі «unibody» з несучим кузовом інтегрованим в раму/шасі, натомість 
                     позашляховиками вважаються автомобіді побудоувані на платформі де кузов 
                     встановлений на раму. Однак, на практиці ці терміни часто розмиті і ранні 
-                    позащляховики з несучим кузовом (наприклад, <strong><i>Jeep Cherokee</i></strong> 1984 року) 
+                    позащляховики з несучим кузовом (наприклад, Jeep Cherokee 1984 року) 
                     рідко називають кросоверами. Через ці невідповідності термін «позашляховик» 
                     часто використовується як загальний термін як для кросоверів, так і для 
                     традиційних позашляховиків. Порівняно з традиційними позашляховиками, 
@@ -132,22 +80,17 @@
                     автомобілями з меншим дорожнім просвітом і нижчим дахом, такими як седани 
                     та хетчбеки, кросовери пропонують більше простору у салоні та покращену 
                     посадку за кермом.<br>
-                    Цікавим є факт, що <strong><i>Лада Нива</i></strong> 1977 року є першим у світі серійним позашляховиком 
+                    Цікавим є факт, що Лада Нива 1977 року є першим у світі серійним позашляховиком 
                     з цілісним несучим кузовом і вважається попередником кросоверів до того, як цей 
-                    термін був придуманий і використаний для позначення <strong><i>AMC Eagle</i></strong> 1979, який 
-                    вважаться першим кросовером у США. <strong><i>Toyota RAV4</i></strong>, яка була представлена ​​в 1994 
+                    термін був придуманий і використаний для позначення AMC Eagle 1979, який 
+                    вважаться першим кросовером у США. Toyota RAV4, яка була представлена ​​в 1994 
                     році, стала одним з перших автомобілів з сучасною концепцією кросовера.<br>
                     У США частка ринку кросоверів зросла з менш ніж 4% у 2000 році до майже 40% у 2018 році.
                 </p>
             </div>
         </div>
     </div>
-    <div style="padding-bottom: 50px;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(184, 158, 135);"></div>  
-</font>
+    <div class="footer">
+    </div>
 </body>
 </html>

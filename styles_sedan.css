@@ -1,0 +1,58 @@
+.speedwell {
+    width: 50%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.advantages {
+    align-items: center;
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+.advantages ul{
+    list-style-type: "✓";
+      
+}
+
+.advantages h2{
+    color: rgb(2, 82, 2);
+}
+
+.disadvantages {
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+.disadvantages ul{
+    list-style-type: "✘";
+}
+
+.disadvantages h2{
+    color: rgb(124, 0, 0);
+}
+
+.main-menu li:nth-child(2){
+    font-size: 40px;
+}
+
+h1{
+    margin: 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h3{
+    margin: 0;
+    font-size: 26px;
+}

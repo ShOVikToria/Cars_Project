@@ -1,0 +1,32 @@
+.car-picture {
+    width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.pictures{
+    padding: 15px;
+    border: none;
+    text-align: left;
+    font-size: 24px;    
+}
+
+.pictures td{
+    text-align: center;
+}
+
+.car-picture:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.main-menu li:nth-child(3){
+    font-size: 40px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

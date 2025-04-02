@@ -4,86 +4,34 @@
     <meta charset="UTF-8">
     <meta name="author" content="Шевчук Вікторія">
     <title>Седани</title>
-    <style>    
-    a{
-        text-decoration: none;
-        color: inherit;
-    }
-    
-    h2 {
-        font-size: 36px;
-    
-    }
-    
-    .main-menu li{
-        display: flex;
-        font-size: 36px;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .main-menu{
-        padding: 0;
-        display: flex;
-        justify-content: space-around;
-        list-style-type: none;
-        margin: 0;
-        width: 100%;
-    }
-
-    p{
-        color: rgb(29, 17, 6);
-        font-size: 30px;
-        line-height: 1.5;
-        margin: 0;
-    }
-    h1{
-        margin: 0;
-    }
-    
-    
-    h3{
-        margin: 0;
-        font-size: 26px;
-    }
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles_sedan.css">
+    <style>
+        a{
+            color: inherit; 
+        }  
     </style>
 </head>
-
-
-<body bgcolor=#D1BCAA style="margin: 0"> 
-    <font face="Arial" color="#1D1106">
-        <center>
-            <font face="Lucida Sans Unicode" color="#BBA28C">
-                <div style="background-color: rgb(29, 17, 6); height: 7vh;">
-                    <ul class="main-menu">
-                        <li>
-                            <a href="index.html">&#8962; Головна</a>
-                        </li>
-                        <li  style="color: rgb(190, 184, 184); font-size: 40px">
-                            <font color=#BEB8B8>
-                                <a href="sedan.html" style="font-size: 40px">Седани</a>
-                            </font>                        
-                        </li>
-                        <li>
-                            <a href="hatchback.html">Хетчбеки</a>
-                        </li>
-                        <li>
-                            <a href="crossover.html">Кросовери</a>
-                        </li>
-                    </ul>
-                </div>
-            </font>
-        </center>
-
-    <center>
-    <div style="display: flex;
-                flex-direction: column;
-                padding-top: 20px;
-                padding-bottom: 20px;
-                padding-left: 50px;
-                padding-right: 50px;">
+<body>
+    <div class="header">
+        <ul class="main-menu">
+            <li>
+                <a href="index.html">&#8962; Головна</a>
+            </li>
+            <li>
+                <a href="sedan.html" id="light_text">Седани</a>
+            </li>
+            <li>
+                <a href="hatchback.html">Хетчбеки</a>
+            </li>
+            <li>
+                <a href="crossover.html">Кросовери</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
         <h2>Седан</h2>
-        <p align="justify" id="седан"><strong>Седан</strong> — триоб'ємний кузов легкового автомобіля з двома 
+        <p>Седан — триоб'ємний кузов легкового автомобіля з двома 
             або трьома рядами 2 або 3 сидінь, з чотирма дверима і 
             багажником, структурно відокремленим від пасажирського 
             салону. Схожий на хетчбек, але з більшими габаритними 
@@ -100,66 +48,39 @@
             седан із кузовним верхом і седан.
         </p>
         <h2>Походження назви</h2>
-        <p align="justify">Щодо походження терміна існують дві версії. Одна пов'язує 
-            його з англ. <font face="Times"><i><strong>sedan</strong></i></font> («паланкін»), що походить з 
-            південно-італійського діалекту від слова <font face="Times"><i><strong>sedia</strong></i></font> — «крісло» 
+        <p>Щодо походження терміна існують дві версії. Одна пов'язує 
+            його з англ. sedan («паланкін»), що походить з 
+            південно-італійського діалекту від слова sedia — «крісло» 
             (перший седан було представлено в Неаполі).
             За іншою версією, слово «седан» утворено від назви 
             французького міста Седан, що спеціалізувалося в XIX 
             столітті на виробництві дорожніх карет.            
             Першим автомобілем, на чотирьох осіб, який отримав 
-            ім'я «седан» був <i><strong>Speedwell Sedan</strong></i>, розроблений у 1911 
-            році компанією <u>Speedwell Motor Co</u> в Огайо.
+            ім'я «седан» був Speedwell Sedan, розроблений у 1911 
+            році компанією Speedwell Motor Co в Огайо.
         </p>
-        <center>
-        <a href="./pictures/Speedwell.jpg" target="_blank">
-            <img src="./pictures/Speedwell.jpg" alt="Speedwell Sedan" 
-                style="width: 50%;
-                        margin-bottom: 10px;
-                        border-radius: 10px;">
-        </a>
-         </center>
-        
+        <img src="./pictures/Speedwell.jpg" alt="Speedwell Sedan" class="speedwell">
         <h3>Speedwell Sedan, 1911 р.</h3> 
     </div>
-</center>
-
-    <center>
-    <div style="display: flex; flex-direction: column;">
-        <div style="display: flex; 
-                    flex-direction: row; 
-                    justify-content: space-around; 
-                    width: 100%;">
-            <div style="padding-left: 20px; font-size: 30px;">
-                <font color=#025202>
-                    <h2>Переваги седанів</h2>
-                </font>
-                <ul style="list-style-type: '✓'">
-                    <li>Комфортний салон.</li>
-                    <li>Великий багажник.</li>
-                    <li>Стабільність на дорозі.</li>
-                </ul>
-            </div>
-            <div style="padding-left: 20px; font-size: 30px;">
-                <font color=#7C0000>
-                    <h2>Недоліки седанів</h2>
-                </font>
-                <ul style="list-style-type: '✘'">
-                    <li>Менша прохідність на поганих дорогах.</li>
-                    <li>Більші габарити порівняно з хетчбеками.</li>
-                </ul>
-            </div>
+    <div class="bottom">
+        <div class="advantages">
+            <h2>Переваги седанів</h2>
+            <ul >
+                <li>Комфортний салон.</li>
+                <li>Великий багажник.</li>
+                <li>Стабільність на дорозі.</li>
+            </ul>
+        </div>
+        <div class="disadvantages">
+            <h2>Недоліки седанів</h2>
+            <ul>
+                <li>Менша прохідність на поганих дорогах.</li>
+                <li>Більші габарити порівняно з хетчбеками.</li>
+            </ul>
         </div>
     </div>
-    </center>
+    <div class="footer">
 
-    <div style="padding-bottom: 50px;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(184, 158, 135);">
     </div>
-</font>
 </body>
 </html>
