@@ -7,16 +7,21 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./styles_index.css">
     <style>
-        a{
+        .main-menu a{
             color: inherit; 
         }  
+
+        .main-menu a:hover{
+            font-size: 40px;
+            font-style: normal; 
+        }
     </style>
 </head>
 <body>
-    <div class="header">
+    <nav class="header">
         <ul class="main-menu">
             <li>
-                <a href="index.html" id="light_text">&#8962; Головна</a>
+                <a href="index.html">&#8962; Головна</a>
             </li>
             <li>
                 <a href="sedan.html">Седани</a>
@@ -28,25 +33,26 @@
                 <a href="crossover.html">Кросовери</a>
             </li>
         </ul>
-    </div>
+    </nav>
     <div class="upper-center">
         <h1>Вітаємо у світі автомобілів!</h1>
     </div>
 
     <div class="content">
-        <h2>Зміст</h2>
-        <ol class="inner-menu">
-            <li><a href="#вступ">Вступ</a></li>
-            <li><a href="#типи-авто">Типи автомобілів</a></li>
-            <ul>
-                <li><a href="sedan.html#седан">Седан</a></li>
-                <li><a href="hatchback.html#хетчбек">Хетчбек</a></li>
-                <li><a href="crossover.html#кросовер">Кросовер</a></li>
-            </ul>
-            <li><a href="#вигляд-опис">Зовнішній вигляд та коротний опис</a></li>
-            <li><a href="#порівняння-моделей">Порівняння найпопулярніших моделей</a></li>
-            <li><a href="#автосалони">Автосалони в Україні</a></li>
-        </ol>
+        <div id="inner-menu">
+            <ol class="inner-menu">
+                <li><a href="#вступ">Вступ</a></li>
+                <li><a href="#типи-авто">Типи автомобілів</a></li>
+                <ul>
+                    <li><a href="sedan.html#седан">Седан</a></li>
+                    <li><a href="hatchback.html#хетчбек">Хетчбек</a></li>
+                    <li><a href="crossover.html#кросовер">Кросовер</a></li>
+                </ul>
+                <li><a href="#вигляд-опис">Зовнішній вигляд та коротний опис</a></li>
+                <li><a href="#порівняння-моделей">Порівняння найпопулярніших моделей</a></li>
+                <li><a href="#автосалони">Автосалони в Україні</a></li>
+            </ol>
+        </div>
         <h2 id="вступ">Вступ</h2>
         <p style="font-style: italic; font-family: serif; font-size: 36px;">Автомобілі — це не просто засіб пересування, 
             а стиль життя, технології та інновації. На нашому сайті ви знайдете корисну інформацію про 
@@ -309,10 +315,12 @@
         </table>
 
     </div>
-    <div class="footer">
-        <h2 id="автосалони">Автосалони в Україні</h2>
-        <p>Тут ви можете переглянути автосалони України:</p>
-        <iframe src="https://auto.ria.com/uk/newauto/autosalons/?r_source=g_ads&r_medium=search&r_campaign=performance_high_frequency&r_options=paid&r_audience=ppc_buyers_newauto&gad_source=1&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1mdFl1fJRKxf9Jah_Zur55ZEFV5zQUhMattqU2r_ghpKgbw3K6pHsaAlffEALw_wcB" ></iframe>
+    <div class="autosalons"> 
+        <h2 id="автосалони">Автосалони в Україні<br></h2>
+        <iframe src="https://auto.ria.com/uk/newauto/autosalons/?r_source=g_ads&r_medium=search&r_campaign=performance_high_frequency&r_options=paid&r_audience=ppc_buyers_newauto&gad_source=1&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1mdFl1fJRKxf9Jah_Zur55ZEFV5zQUhMattqU2r_ghpKgbw3K6pHsaAlffEALw_wcB" >
+        </iframe>
+    </div>
+    <div class="footer" id="footer-index">
     </div>
 </body>
 </html>

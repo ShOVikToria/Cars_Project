@@ -6,26 +6,24 @@
 }
 
 .pictures{
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-right: 20px;  
+    float: left;
+    width: 400px;
+    margin-left: 20px;
 }
 
+.text{
+    float:right;
+    width: calc(100% - 420px)
+}
 .group{
     display: flex;
     flex-direction: column;
+    margin-top: 10%;
 }
 
 .group p{
     font-size: 24px;
     text-align: center;
-}
-
-.text{
-    display: flex;
-    flex-direction: column;     
 }
 
 .car-picture:hover {
@@ -35,11 +33,11 @@
 
 .main-menu li:last-child{
     font-size: 40px;
+    color: rgb(192, 179, 179);
 }
 
 .content{
-    display: flex;
-    flex-direction: column;
+     overflow: hidden; /* ЩОБ РОЗТЯГУВАВСЯ ВРАХОВУЮЧИ ПЛАВАЮЧІ ЕЛЕМЕНТИ */
 }
 
 .info{

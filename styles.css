@@ -9,11 +9,6 @@ a{
     color: red;
 }
 
-#light_text
-{
-    color: rgb(192, 179, 179);
-}
-
 .main-menu{
     display: flex;
     align-content: center;
@@ -43,39 +38,6 @@ ul{
     justify-content: center;
 }
 
-.upper-center{
-    height: 45vh;
-    width: 100%;
-    background-image:url(https://static.vecteezy.com/ti/fotos-gratis/t1/40911488-ai-gerado-uma-linha-do-luxo-carros-dentro-varios-cores-e-exibido-dentro-uma-showroom-com-foco-em-uma-vermelho-veiculos-frente-lado-e-roda-foto.jpeg); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-}
-
-.upper-center::after {
-    content: ""; 
-    background-color:  rgba(29, 17, 6, 0.70); 
-    position: absolute; 
-    
-    left: 0;
-    width: 100%;
-    height: 45vh;
-    z-index: 0; 
-}
-
-.upper-center h1 {
-    position: relative;
-    z-index: 1;
-    color: rgb(192, 179, 179);
-    padding-left: 5%;
-    font-size: 72px;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-}
-
 h2 {
     color: rgb(29, 17, 6);
     font-size: 36px;
@@ -90,17 +52,24 @@ p{
 }
 
 .content {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.foreign{
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 34px;
 }
 
 .footer{
-    padding-bottom: 50px;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 6vh;
     background-color: rgb(184, 158, 135);
 }

@@ -23,6 +23,7 @@
 
 .main-menu li:nth-child(3){
     font-size: 40px;
+    color: rgb(192, 179, 179);
 }
 
 .content{
