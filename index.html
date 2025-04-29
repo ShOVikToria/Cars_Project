@@ -16,6 +16,22 @@
             font-style: normal; 
         }
     </style>
+    <script>
+        alert("Ласкаво просимо на наш сайт про автомобілі!");
+    
+        let userName = prompt("Як вас звати?");
+        if (userName) {
+            let wantsMoreInfo = confirm(`Привіт, ${userName}! Бажаєте дізнатись більше про автомобілі?`);
+            if (wantsMoreInfo) {
+                alert("Чудово! Перейдіть до розділів нашого сайту, щоб дізнатись більше.");
+            } else {
+                alert("Шкода! Можливо, вам сподобається просто переглядати картинки автомобілів.");
+            }
+        } else {
+            alert("Шкода, що ви не представилися.");
+        }
+    </script>
+    <script src="./scripts_index.js"></script>
 </head>
 <body>
     <nav class="header">
