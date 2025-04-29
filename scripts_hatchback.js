@@ -50,18 +50,16 @@ window.onload = function() {
                 </td>
             </tr> 
         </table>`;
-    }, 8000);    
+    }, 6000);    
 
-
+    let heading = document.querySelector("h2");
     setTimeout(() => {
         // 3. nodeValue
-        let heading = document.querySelector("h2");
         alert(heading.firstChild.nodeValue);
     }, 10000);
     
     setTimeout(() => {
         // 4. textContent
-        let heading = document.querySelector("h2"); 
         heading.firstChild.textContent = "Інформація про хетчбеки";
     }, 15000);
 
