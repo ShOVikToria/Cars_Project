@@ -31,8 +31,7 @@
     cursor: pointer;
 }
 
-.main-menu li:last-child{
-    font-size: 40px;
+.main-menu li:last-child button{
     color: rgb(192, 179, 179);
 }
 

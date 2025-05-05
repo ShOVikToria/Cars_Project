@@ -21,8 +21,7 @@
     cursor: pointer;
 }
 
-.main-menu li:nth-child(3){
-    font-size: 40px;
+.main-menu li:nth-child(3) button{
     color: rgb(192, 179, 179);
 }
 

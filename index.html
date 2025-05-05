@@ -16,7 +16,7 @@
             font-style: normal; 
         }
     </style>
-    <script>
+    <!-- <script>
         alert("Ласкаво просимо на наш сайт про автомобілі!");
     
         let userName = prompt("Як вас звати?");
@@ -30,12 +30,12 @@
         } else {
             alert("Шкода, що ви не представилися.");
         }
-    </script>
+    </script> -->
     <script src="./scripts_index.js"></script>
 </head>
 <body>
     <nav class="header">
-        <ul class="main-menu">
+        <!-- <ul class="main-menu">
             <li>
                 <a href="index.html">&#8962; Головна</a>
             </li>
@@ -48,7 +48,13 @@
             <li>
                 <a href="crossover.html">Кросовери</a>
             </li>
-        </ul>
+        </ul>   -->
+        <ul class="main-menu">
+            <li><button data-behavior="navigate" data-url="index.html">&#8962; Головна</button></li>
+            <li><button data-behavior="navigate" data-url="sedan.html">Седани</button></li>
+            <li><button data-behavior="navigate" data-url="hatchback.html">Хетчбеки</button></li>
+            <li><button data-behavior="navigate" data-url="crossover.html">Кросовери</button></li>
+        </ul> 
     </nav>
     <div class="upper-center">
         <h1>Вітаємо у світі автомобілів!</h1>
@@ -78,7 +84,7 @@
 
         <h2 id="типи-авто">Типи автомобілів</h2>
         <p>Ось основні типи автомобілів, які ми розглядаємо:</p>
-        <dl>
+        <dl id="list">
             <dt><b>Седан</b></dt>
             <dd>Легковий автомобіль з чітко окремим багажником і салоном.</dd>
             <dt><b>Хетчбек</b></dt>
@@ -108,10 +114,16 @@
                     <td><a href="https://auto.ria.com/uk/search/?indexName=auto,order_auto,newauto_search&body.id[1]=5&categories.main.id=1&country.import.usa.not=-1&price.currency=1&abroad.not=0&custom.not=1&page=0&size=10" class="car-link">Обрати кросовер для покупки</a></td>
                 </tr>
                 <tr>
+                    <td><button id="moreInfoSedan">Дізнатись більше про авто</button></td>
+                    <td><button id="moreInfoHatchback">Дізнатись більше про авто</button></td>
+                    <td><button id="moreInfoCrossover">Дізнатись більше про авто</button></td>
+                </tr>
+                <tr>
                     <td>Седани - це класичні легкові автомобілі з окремим багажним відділенням.</td>
                     <td>Хетчбеки - компактні автомобілі зі зручним доступом до багажного відділення.</td>
                     <td>Кросовери - це автомобілі, що поєднують в собі риси позашляховиків і легкових авто.</td>
                 </tr>
+                
             </tbody>
         </table>
 

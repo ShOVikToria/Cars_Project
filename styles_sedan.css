@@ -10,36 +10,35 @@ p + h2{
     color:rgb(65, 43, 17);
 }
 
-.advantages {
+#advantages {
     align-items: center;
     padding-left: 20px;
     font-size: 30px;
 }
 
-.advantages ul{
+#advantages ul{
     list-style-type: "✓";
       
 }
 
-.advantages h2{
+#advantages h2{
     color: rgb(2, 82, 2);
 }
 
-.disadvantages {
+#disadvantages {
     padding-left: 20px;
     font-size: 30px;
 }
 
-.disadvantages ul{
+#disadvantages ul{
     list-style-type: "✘";
 }
 
-.disadvantages h2{
+#disadvantages h2{
     color: rgb(124, 0, 0);
 }
 
-.main-menu li:nth-child(2){
-    font-size: 40px;
+.main-menu li:nth-child(2) button{
     color: rgb(192, 179, 179);
 }
 

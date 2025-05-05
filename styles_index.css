@@ -1,5 +1,4 @@
-.main-menu li:first-child{
-    font-size: 40px;
+.main-menu li:first-child button{
     color: rgb(192, 179, 179);
 } 
 
@@ -218,4 +217,24 @@ h2{
     padding: 10px;
     padding-bottom: 30px;
     margin: 10px;
+}
+
+.highlight {
+    background-color: #ffedcc;
+}
+
+.content button{
+    font-family:   'Lucida Sans Unicode', Verdana, sans-serif;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(58, 42, 28, 0.6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content button:hover{
+    background-color: rgba(58, 42, 28, 0.9);
 }

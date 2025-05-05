@@ -73,3 +73,43 @@ p{
     height: 6vh;
     background-color: rgb(184, 158, 135);
 }
+
+/* Нові стилі для головного меню */
+.main-menu button {
+    background: none;
+    border: none;
+    color: rgb(187, 162, 140);
+    font-size: 36px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0 80px;
+    margin: 0;
+    text-decoration: none;
+    position: relative; /* потрібно для псевдоелементів */
+    transition: color 0.3s;
+}
+
+.main-menu button::before,
+.main-menu button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: rgb(187, 162, 140);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.main-menu button::before {
+    left: 0;
+}
+
+.main-menu button::after {
+    right: 0;
+}
+
+.main-menu button:hover::before,
+.main-menu button:hover::after {
+    transform: scaleY(1);
+}
