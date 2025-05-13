@@ -73,7 +73,7 @@ setTimeout(() => {
             </td>
         </tr> 
     </table>`;
-}, 3000); 
+}, 1500); 
 
 
 window.onload = function () {

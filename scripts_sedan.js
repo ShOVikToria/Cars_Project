@@ -30,7 +30,6 @@ function showCarAlert() {
     alert('Це Speedwell Sedan, 1911 року');
   }
 
-
 window.onload = function () {
     const adv = document.getElementById("advantages");
     const disadv = document.getElementById("disadvantages");
@@ -78,6 +77,7 @@ window.onload = function () {
         disadvShown = !disadvShown;
     };
 
+// Головне меню
     const behaviors = {
         navigate: (element) => {
             const url = element.dataset.url; // бере значення атрибуту data-url
@@ -99,4 +99,27 @@ window.onload = function () {
             console.warn('Невідома поведінка:', behaviorName);
         }
     });
+
+
+//LAB-8
+const blocks = document.querySelectorAll(".block");
+
+blocks.forEach(block => {
+    const h2 = block.querySelector("h2");
+
+    block.addEventListener("mouseover", (event) => {
+        if (!event.relatedTarget || !block.contains(event.relatedTarget)) {
+            h2.style.backgroundColor = "rgba(255, 165, 0, 0.3";
+            h2.style.transition = "background-color 0.3s ease, color 0.3s ease";
+        }
+    });
+
+    block.addEventListener("mouseout", (event) => {
+        if (!event.relatedTarget || !block.contains(event.relatedTarget)) {
+            h2.style.backgroundColor = "";
+        }
+    });
+});
+
+
 };

@@ -1,143 +1,47 @@
-// window.onload = function() {
-//     const originalColor = document.body.style.backgroundColor; 
-    
-//     setTimeout(() => {
-//         document.body.style.backgroundColor = "lightblue";
-//         setTimeout(() => {
-//             document.body.style.backgroundColor = originalColor;
-//         }, 30000);
-//     }, 15000);
-    
-//     setTimeout(() => {
-//         let tempWin = window.open("", "", "width=900,height=600");
-        
-//         setTimeout(() => {
-//                 // document.write 
-//             tempWin.document.write(`
-//                 <!DOCTYPE html>
-//                 <html>
-//                     <head>
-//                         <style>
-//                             body {
-//                                 background-color: lightyellow;
-//                                 text-align: center;
-//                             }
-//                             .car-image {
-//                                 display: block;
-//                                 margin: 20px auto;
-//                                 max-width: 90%;
-//                             }
-//                             .msg {
-//                                 color: green;
-//                                 font-size: 30px;
-//                                 margin-top: 24px;
-//                                 text-align: center;
-//                             }
-//                             .msg2 {
-//                                 color: grey;
-//                                 font-size: 20px;
-//                                 margin-top: auto;
-//                                 text-align: center;
-//                             }
-//                             #attention {
-//                                 color: red;
-//                                 font-size: 14px;
-//                                 text-align: center;
-//                                 margin: 4px;
-//                             }
-//                         </style>
-//                     </head>
-//                     <body>
-//                     <span id="attention">Увага</span>
-//                     </body>
-//                 </html>
-//             `);
-
-//             if (tempWin.document && tempWin.document.body) {
-//                 let attentionSpan = tempWin.document.getElementById("attention");
-//                 let bellSpan, exclamationSpan, block, p1, p2, p3, img, text;
-//                 // after
-//                 setTimeout(() => {
-//                     exclamationSpan = tempWin.document.createElement("span");
-//                     exclamationSpan.textContent = "❗";
-//                     attentionSpan.after(exclamationSpan);
-//                 }, 500);
-//                 // before
-//                 setTimeout(() => {
-//                     bellSpan = tempWin.document.createElement("span");
-//                     bellSpan.textContent = "🔔";
-//                     attentionSpan.before(bellSpan);
-//                 }, 1000);     
-//                 // append
-//                 setTimeout(() => {
-//                     block = tempWin.document.createElement("div");
-//                     block.append(text=tempWin.document.createTextNode("Завантаження повідомлення..."));
-//                     tempWin.document.body.append(block);
-//                 }, 2000);
-//                 // replaceWith
-//                 setTimeout(() => {
-//                     p2 = tempWin.document.createElement("p");
-//                     p2.className = "msg";
-//                     p2.append(tempWin.document.createTextNode("Тут Ви знайдете цікаву інформацію про цей тип автомобілів"));
-//                     text.replaceWith(p2);
-//                 }, 3500);
-//                 // prepend
-//                 setTimeout(() => {
-//                     p1 = tempWin.document.createElement("p");
-//                     p1.className = "msg";
-//                     p1.append(tempWin.document.createTextNode("Ви відкрили сторінку про кросовери."));
-//                     block.prepend(p1);
-//                 }, 4500);
-//                 // append
-//                 setTimeout(() => {
-//                     p3 = tempWin.document.createElement("p");
-//                     p3.className = "msg2";
-//                     p3.append(tempWin.document.createTextNode("Зараз тут з'явиться картинка"));
-//                     p1.after(p3);
-//                 }, 6000);
-//                 // replaceWith
-//                 setTimeout(() => {
-//                     img = tempWin.document.createElement("img");
-//                     img.src = "./pictures/crossover.png";
-//                     img.alt = "Кросовер";
-//                     img.className = "car-image";
-//                     p3.replaceWith(img);
-//                 }, 7000);
-//                 // remove
-//                 setTimeout(() => {
-//                     let spans = tempWin.document.querySelectorAll("span");
-//                     spans.forEach(span => span.remove());
-//                 }, 8000);
-//                 setTimeout(() => {
-//                     tempWin.close();
-//                 }, 10000);
-//             }
-//         }, 1000);
-//     }, 1000);    
-// };
-
-
-
 window.onload = function () {
+    //Головне меню
     const behaviors = {
         navigate: (element) => {
-            const url = element.dataset.url; // бере значення атрибуту data-url
+            const url = element.dataset.url; 
             if (url) {
                 window.location.href = url;
             }
         },    };
 
     document.querySelector('.main-menu').addEventListener('click', function (event) {
-        const button = event.target.closest('button[data-behavior]'); // перевірка чи клік був по кнопці
+        const button = event.target.closest('button[data-behavior]'); 
         if (!button) return;
 
-        const behaviorName = button.dataset.behavior; // зчитування поведінки
-        const behaviorFn = behaviors[behaviorName]; // перевірка існування опису поведінки
+        const behaviorName = button.dataset.behavior;
+        const behaviorFn = behaviors[behaviorName];
 
         if (behaviorFn) {
-            behaviorFn(button); // описана в behaviors
+            behaviorFn(button);
         } else {
             console.warn('Невідома поведінка:', behaviorName);
         }
+    });
+
+
+
+//LAB-8
+const carGroups = document.querySelectorAll(".group");
+    carGroups.forEach(group => {
+        group.addEventListener("mouseover", (event) => {
+            const targetElement = event.target; // Використовуємо event.target для визначення елемента всередині групи
+            if (targetElement !== group) { // Перевіряємо, чи не сам контейнер, а якийсь внутрішній елемент
+                targetElement.style.transform = "scale(1.2)";
+                targetElement.style.boxShadow = "10px 10px 15px rgba(184, 158, 135, 0.9)";
+                targetElement.style.transition = "transform 0.3s ease, background-color 0.3s ease";
+            }
+        });
+
+        group.addEventListener("mouseout", (event) => {
+            const targetElement = event.target; // Знову використовуємо event.target для відновлення стилів
+            if (targetElement !== group) { // Перевіряємо, чи не сам контейнер
+                targetElement.style.transform = "";
+                targetElement.style.boxShadow = "";
+            }
+        });
     });
 };

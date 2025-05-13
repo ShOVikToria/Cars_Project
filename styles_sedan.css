@@ -52,6 +52,13 @@ h1{
     align-items: center;
 }
 
+
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .bottom{
     display: flex;
     flex-direction: row;

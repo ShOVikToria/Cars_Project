@@ -1,0 +1,13 @@
+.dragElement {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: grab;
+    z-index: 1;
+}
+
+img{
+    width: 450px;
+    height: auto;
+}

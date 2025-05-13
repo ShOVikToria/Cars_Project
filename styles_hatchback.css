@@ -19,7 +19,7 @@
 .car-picture:hover {
     transform: scale(1.1);
     cursor: pointer;
-}
+} 
 
 .main-menu li:nth-child(3) button{
     color: rgb(192, 179, 179);

@@ -18,25 +18,27 @@
 .group{
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 .group p{
     font-size: 24px;
     text-align: center;
 }
-
+/* 
 .car-picture:hover {
     transform: scale(1.1);
     cursor: pointer;
-}
+} */
 
 .main-menu li:last-child button{
     color: rgb(192, 179, 179);
 }
 
 .content{
-     overflow: hidden; /* ЩОБ РОЗТЯГУВАВСЯ ВРАХОВУЮЧИ ПЛАВАЮЧІ ЕЛЕМЕНТИ */
+    overflow: hidden; /* ЩОБ РОЗТЯГУВАВСЯ ВРАХОВУЮЧИ ПЛАВАЮЧІ ЕЛЕМЕНТИ */
 }
 
 .info{
